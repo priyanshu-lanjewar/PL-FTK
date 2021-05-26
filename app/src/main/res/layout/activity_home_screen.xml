@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeScreen"
+    android:layout_margin="10dp">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/switchOn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="25dp"
+        android:src="@drawable/swthon"
+        />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/switchOff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:src="@drawable/swthof"
+        android:visibility="invisible"
+        />
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/status_off"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:textColor="#FF0000"
+        android:background="#BDCDDA"
+        />
+
+    <TextView
+        android:id="@+id/modeTv"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/status"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:text="@string/mode"
+        android:background="@drawable/onbg"
+        android:textColor="#ffffff"
+        />
+
+    <Spinner
+        android:id="@+id/mode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/modeTv"
+        android:layout_marginTop="20dp"
+        />
+    <Button
+        android:id="@+id/configure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mode"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff"
+        android:text="@string/configure"
+        />
+    <ScrollView
+        android:background="@drawable/offbg"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="100dp"
+        android:layout_below="@id/configure"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:padding="5dp"
+                android:id="@+id/t1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="How to Use this App ?"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:textStyle="bold"/>
+            <TextView
+                android:padding="5dp"
+                android:id="@+id/t2"
+                android:layout_below="@+id/t1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="There are four Modes in this app \n -> DEFAULT \n -> BLINK\n -> TIMER \n -> AUTOMATIC*"
+                android:textSize="20sp"
+
+                />
+            <TextView
+                android:padding="5dp"
+                android:id="@+id/t3"
+                android:layout_below="@id/t2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Default Mode"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:textStyle="bold"/>
+            <TextView
+                android:padding="5dp"
+                android:id="@+id/t4"
+                android:layout_below="@+id/t3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="It is the Simplest/common mode to use\nClick on Button Below to Turn ON / OFF the Flashlight."
+                android:textSize="20sp"
+
+                />
+            <TextView
+                android:padding="5dp"
+                android:id="@+id/t5"
+                android:layout_below="@id/t4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Blink Mode"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:textStyle="bold"/>
+            <TextView
+                android:padding="5dp"
+                android:id="@+id/t6"
+                android:layout_below="@+id/t5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Want a blinking Flashlight?\nThen use this mode\nClick on configure to set blink time interval and number of blinks and Done. Click the button to enjoy your disco light.."
+                android:textSize="20sp"
+
+                />
+
+            <TextView
+                android:padding="5dp"
+                android:id="@+id/t7"
+                android:layout_below="@id/t6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Timer Mode"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:textStyle="bold"/>
+            <TextView
+                android:padding="5dp"
+                android:id="@+id/t8"
+                android:layout_below="@+id/t7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Are you enough busy or not available to turn the flashlight off?\nClick configure button to enter duration to keep flashlight ON.\nNow hit the Button to Start Flashlight...Enjoy...your Flashlight will automatically be turned off."
+                android:textSize="20sp"
+
+                />
+            <TextView
+                android:padding="5dp"
+                android:id="@+id/t9"
+                android:layout_below="@id/t8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Automatic Mode"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:textStyle="bold"/>
+            <TextView
+                android:padding="5dp"
+                android:id="@+id/t10"
+                android:layout_below="@id/t9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="This Feature Requires Light Sensor and will only work if your device has Light Sensor!"
+                android:textSize="15sp"
+                android:textAlignment="center"
+                android:textStyle="bold"/>
+            <TextView
+                android:padding="5dp"
+                android:id="@+id/t11"
+                android:layout_below="@+id/t10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Facing Issues of Frequent power failure?\nMoving on a road with uneven lighting?\nNo worries, in this click button to turn on, your flashlight will automatically lit in low light area and will get turned off in high light area."
+                android:textSize="20sp"
+
+                />
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:text="Developed With ❤️ by Priyanshu Lanjewar"/>
+
+</RelativeLayout>

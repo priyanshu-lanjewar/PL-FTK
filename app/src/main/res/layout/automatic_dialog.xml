@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="15dp"
+    >
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/tv_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/adjust_sensitivity"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        tools:ignore="HardcodedText" />
+
+    <com.google.android.material.slider.Slider
+        android:layout_below="@id/tv_number"
+        android:id="@+id/sens"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:valueFrom="0"
+        android:valueTo="100"
+        android:value="40"
+        android:layout_marginBottom="20dp"
+        />
+
+
+</RelativeLayout>

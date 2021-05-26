@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">PL-FTK</string>
+    <string name="ftl">PL FlashLight Tool Kit</string>
+    <string name="status_off">Flash is Off</string>
+    <string name="status_on">Flash is ON</string>
+    <string name="mode">Mode</string>
+    <string name="configure">Configure</string>
+    <string name="blibks">Enter Number of Blinks</string>
+    <string name="submit">Submit</string>
+    <string name="adjust_sensitivity">Adjust Sensitivity</string>
+    <string name="delaysec">Enter delay in Seconds</string>
+</resources>

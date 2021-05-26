@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="15dp"
+    >
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/tv_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="How long you want to keep the flash on?"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/tv_hr"
+        android:layout_below="@id/tv_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="How long you want to keep the flash on?"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        tools:ignore="HardcodedText" />
+    <com.google.android.material.slider.Slider
+        android:layout_below="@id/tv_hr"
+        android:id="@+id/hour"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:valueFrom="0"
+        android:valueTo="3"
+        android:stepSize="1"
+        android:value="0"
+        android:layout_marginBottom="20dp"
+        />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/tv_min"
+        android:layout_below="@id/hour"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="How long you want to keep the flash on?"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        tools:ignore="HardcodedText" />
+    <com.google.android.material.slider.Slider
+        android:layout_below="@id/tv_min"
+        android:id="@+id/min"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:valueFrom="0"
+        android:valueTo="60"
+        android:stepSize="1"
+        android:value="0"
+        android:layout_marginBottom="20dp"
+        />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/tv_sec"
+        android:layout_below="@id/min"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="How long you want to keep the flash on?"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        tools:ignore="HardcodedText" />
+    <com.google.android.material.slider.Slider
+        android:layout_below="@id/tv_sec"
+        android:id="@+id/sec"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:valueFrom="0"
+        android:valueTo="60"
+        android:stepSize="1"
+        android:value="0"
+        android:layout_marginBottom="20dp"
+        />
+
+</RelativeLayout>
